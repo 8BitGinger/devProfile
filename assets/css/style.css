@@ -252,7 +252,7 @@ p {
   }
 
 .gallery__item {
-  filter:blur(2px) grayscale(50%);
+  filter:opacity(.6);
 
 }
   
@@ -261,6 +261,7 @@ p {
   box-shadow: ;
   scale: 1.03;
   transition: ease-in-out 0.1s;
+
 
   }
   
@@ -392,7 +393,7 @@ p {
   .repo:hover {
     scale: 1.2;
     transition: ease-in-out 0.5s;
-
+    opacity: 1;
   }
 
   .title {
@@ -445,3 +446,31 @@ p {
   transition: ease-in-out 0.5s;
   
 }
+
+.time {
+  display:flex;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  margin-left: 200px;
+  font-size: 50px;
+  background-color: rgba(0, 0, 0, 0.45);  
+  backdrop-filter: blur(5px);
+  color: rgb(255, 255, 255);
+  font-family: 'dela gothic one';
+  height: 80px;
+  font-weight: 100;
+
+}
+
+.para-title {
+  font-size: 100px;
+  color: orange;
+  font-family: 'caveat';
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+
+}
+
+
