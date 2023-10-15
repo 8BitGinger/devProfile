@@ -243,7 +243,9 @@ p {
     filter:blur(2px) grayscale(50%);
     align-content: center;
     border-radius: 7px;
-    border: 8px solid rgb(66, 255, 4);
+    border: 8px solid rgba(66, 255, 4, .75);
+  
+
     margin-top: 10px;
   }
   
@@ -344,9 +346,9 @@ p {
 
   .repo {
     font-size: 50px;
-    color: orange;
+    color: rgb(255, 0, 0);
     margin: 30px;
-    
+   
     opacity: .65;
   }
 
@@ -376,3 +378,26 @@ p {
     text-indent: 10%;
     text-align: left;
   }
+
+  .game-over {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    margin-left: 120px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.45);  
+    backdrop-filter: blur(5px);
+    border: 1px dashed red;
+    backdrop-filter: blur(5px);
+    z-index: -1;
+    }
+
+  .game-pic {
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    height: 100px;
+    opacity: .5;
+  }
+
