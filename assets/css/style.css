@@ -98,7 +98,7 @@ section {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     margin-top: 5px;
-    margin-bottom: 25px;
+    
     
 }
 
@@ -130,6 +130,8 @@ a {
 
 li.link-item:hover {
   scale: 1.2;
+  transition: ease-in-out 0.5s;
+
 }
 
 
@@ -164,7 +166,7 @@ h4.nav-name {
 
 .link {
     font-size: larger;
-    color: rgb(42, 164, 28);
+    color: rgb(255, 255, 255);
     -webkit-text-stroke: 1.5px rgb(8, 49, 16);
     font-family: 'dela gothic one';
     margin-top: 15px;
@@ -179,7 +181,8 @@ h4.nav-name {
 
 
 .link:hover {
-  transition: ease-in 5.s;
+  transition: ease-in-out 0.5s;
+
     scale: 1.2;
     
 
@@ -199,7 +202,7 @@ h4.nav-name {
   justify-content: center;
   margin-top: 25px;
   color: rgb(255, 255, 255);
-  background-color: rgba(18, 16, 13, 0.45);  
+  background-color: rgba(53, 189, 22, 0.45);  
   backdrop-filter: blur(5px);
  
   
@@ -210,16 +213,15 @@ h4.nav-name {
 p {
   border-radius: 10px;
   margin: 50px;
-  font-size: xx-large;
+  font-size: x-large;
   
 
 }
 
 .gallery {
- 
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(12, 5vw);
+    grid-template-rows: repeat(26, 5vw);
     grid-gap: 5px;
     width: 70%;
     justify-content: center;
@@ -229,11 +231,11 @@ p {
     margin-bottom: 0;
     background-color: rgba(18, 16, 13, 0.45);  
     backdrop-filter: blur(5px);
-    border: 2px solid rgba(11, 225, 11, .35);
-    padding: 50px;
+    padding: 30px;
     padding-bottom: 0px;
     border-radius: 15px;
     margin-left: 280px;
+    box-shadow: -5px -5px 30px 5px orange, 5px 5px 30px 5px rgb(9, 240, 9);
   }
   
   
@@ -242,19 +244,23 @@ p {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    filter:blur(2px) grayscale(50%);
     align-content: center;
-    border-radius: 7px;
-    border: 5px solid rgba(66, 255, 4, .75);
-  
+    border-radius: 10px;
+   
 
     margin-top: 10px;
   }
+
+.gallery__item {
+  filter:blur(2px) grayscale(50%);
+
+}
   
-  .gallery__img:hover {
-  filter: none;
+  .gallery__item:hover {
+    filter: none;
   box-shadow: ;
   scale: 1.03;
+  transition: ease-in-out 0.1s;
 
   }
   
@@ -274,45 +280,74 @@ p {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 6;
-    grid-row-end: 8;
+    grid-row-end: 10;
   }
   
   .gallery__item--3 {
     grid-column-start: 5;
     grid-column-end: 9;
     grid-row-start: 6;
-    grid-row-end: 8;
+    grid-row-end: 10;
   }
   
   .gallery__item--4 {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 8;
-    grid-row-end: 10;
+    grid-row-start: 10;
+    grid-row-end: 14;
   }
   
   .gallery__item--5 {
     grid-column-start: 5;
     grid-column-end: 9;
-    grid-row-start: 8;
-    grid-row-end: 10;
+    grid-row-start: 10;
+    grid-row-end: 14;
   }
   
   .gallery__item--6 {
     grid-column-start: 1;
     grid-column-end: 5;
-    grid-row-start: 10;
-    grid-row-end: 12;
+    grid-row-start: 14;
+    grid-row-end: 18;
   }
   
   .gallery__item--7 {
     grid-column-start: 5;
     grid-column-end: 9;
-    grid-row-start: 10;
-    grid-row-end: 12;
+    grid-row-start: 14;
+    grid-row-end: 18;
+  }
+
+  .gallery__item--8 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 18;
+    grid-row-end: 22;
+  }
+
+  .gallery__item--9 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 18;
+    grid-row-end: 22;
+  }
+
+  .gallery__item--10 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 22;
+    grid-row-end: 26;
+  }
+
+  .gallery__item--11 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 22;
+    grid-row-end: 26;
   }
   
   .floatbox {
+    filter: none;
     display: flex;
     background-color: rgba(18, 16, 13, 0.45);  
     backdrop-filter: blur(5px);
@@ -355,7 +390,9 @@ p {
   }
 
   .repo:hover {
-    scale: 1.1;
+    scale: 1.2;
+    transition: ease-in-out 0.5s;
+
   }
 
   .title {
@@ -382,11 +419,7 @@ p {
   }
 
   .game-over {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    justify-content: center;
-    text-align: center;
+
     z-index: -1;
     margin-top: 30px;
     width: 85%;
@@ -394,14 +427,21 @@ p {
     background-image: url(../images/ground-layer1.png);
     }
 
-  .game-pic {
-    justify-content: center;
-    margin: auto;
-    text-align: center;
-    height: 100px;
-    padding: 30px;
-    width: 50%;
-    
-  }
 
+.head-shot {
+  justify-content: center;
+  margin: auto;
+  
+  text-align: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border: 2px solid grey;
+  backdrop-filter: blur(5px);
+}
 
+.head-shot:hover {
+  scale: 1.4;
+  transition: ease-in-out 0.5s;
+  
+}
