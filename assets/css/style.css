@@ -167,6 +167,7 @@ h4.nav-name {
     color: rgb(39, 215, 19);
     -webkit-text-stroke: 1.5px rgb(8, 49, 16);
     font-family: 'dela gothic one';
+    margin-top: 15px;
 }
 
 .icon {
@@ -216,7 +217,7 @@ p {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(12, 5vw);
-    grid-gap: 15px;
+    grid-gap: 5px;
     width: 75%;
     justify-content: center;
     text-align: center;
@@ -226,11 +227,9 @@ p {
     background-color: rgba(18, 16, 13, 0.45);  
     backdrop-filter: blur(5px);
     border: 2px solid rgba(11, 225, 11, .35);
-    padding-right: 10px;
-    padding-top: 20px;
+    padding: 50px;
     padding-bottom: 0px;
     border-radius: 15px;
-  
     margin-left: 280px;
   }
   
@@ -243,7 +242,7 @@ p {
     filter:blur(2px) grayscale(50%);
     align-content: center;
     border-radius: 7px;
-    border: 8px solid rgba(66, 255, 4, .75);
+    border: 5px solid rgba(66, 255, 4, .75);
   
 
     margin-top: 10px;
@@ -261,6 +260,7 @@ p {
   }
   
   .gallery__item--1 {
+    margin-top: 20px;
     grid-column-start: 1;
     grid-column-end: 9;
     grid-row-start: 1;
@@ -345,15 +345,14 @@ p {
   }
 
   .repo {
-    font-size: 50px;
-    color: rgb(255, 0, 0);
-    margin: 30px;
-   
+    width: 100px;
     opacity: .65;
+    margin-right: 20px;
+    margin-bottom: 10px;
   }
 
   .repo:hover {
-    scale: 1.2;
+    scale: 1.1;
   }
 
   .title {
@@ -381,16 +380,14 @@ p {
 
   .game-over {
     display: flex;
+    flex-direction: column;
     margin: auto;
     justify-content: center;
     text-align: center;
-    margin-left: 120px;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.45);  
-    backdrop-filter: blur(5px);
-    border: 1px dashed red;
-    backdrop-filter: blur(5px);
     z-index: -1;
+    margin-bottom: 25px;
+    width: 85%;
+    margin-left: 200px;
     }
 
   .game-pic {
@@ -398,6 +395,14 @@ p {
     margin: auto;
     text-align: center;
     height: 100px;
-    opacity: .5;
+    padding: 10px;
+    
+  }
+
+  .dino {
+    justify-content: center;
+    margin: auto;
+    block-size: 200px;
+    margin-top: 15px;
   }
 
