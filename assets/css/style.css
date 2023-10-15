@@ -335,6 +335,25 @@ p {
     color:orange;
   }
 
+  .float {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    
+  }
+
+  .repo {
+    font-size: 50px;
+    color: orange;
+    margin: 30px;
+    
+    opacity: .65;
+  }
+
+  .repo:hover {
+    scale: 1.2;
+  }
+
   .title {
     color: rgb(12, 222, 40);
     display: flex;
