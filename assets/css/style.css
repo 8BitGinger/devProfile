@@ -568,7 +568,7 @@ p {
     background-image: url(../images/8bit-header2.png);
     background-size: cover;
     margin: none;
-    margin-left: 100px;
+    margin-left: 105px;
     margin-right: 0;
 }
 
@@ -576,7 +576,7 @@ p {
 
 
 section {
-    width: 70%;
+    width: 90%;
     margin-top: 30px;
 
 }
@@ -613,7 +613,16 @@ section {
 }
 
 
+.dino {
+  animation: none;
+  margin-left: 0px;
+}
 
+.knight {
+  animation: none;
+  margin-left: 100px;
+  height: 100px;
+}
 
 .start {
   width: 80px;
@@ -642,7 +651,7 @@ h4.nav-name {
     font-size: medium;
     margin-left: 0px;
     margin-top: 10px;
-    width: 75%;
+    width: 85%;
 }
 
 .icon {
@@ -681,6 +690,7 @@ p {
   border-radius: 10px;
   margin: 30px;
   font-size: larger;
+  width: 90%;
   
 
 }
