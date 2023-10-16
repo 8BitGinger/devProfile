@@ -274,7 +274,7 @@ p {
   }
 
 .gallery__item {
-  filter:opacity(.6);
+  filter:opacity(.7);
 
 }
   
@@ -891,18 +891,21 @@ p {
 align-items: center;
 border-radius: 50%;
 margin: auto;
-margin-top: 25px;
-font-size: 20px;
+margin-top: 15px;
+font-size: 25px;
 align-items: center;
-margin-left: 200px;
+margin-left: 160px;
 background-color: none;
 background-image: url(../images/clock.png);
 background-size: cover;
-width: 150px;
-height: 150px;
+width: 200px;
+height: 200px;
 padding: 10px;
 justify-content: center;
+color: black;
 }
+
+
 
 h4.nav-name {
   color: black;
