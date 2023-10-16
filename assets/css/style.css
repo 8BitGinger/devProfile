@@ -514,7 +514,23 @@ p {
   margin: 0;
   margin-top: 20px;
   font-weight: 600;
-  
+  animation: bounceIn 3s;
+  animation-delay: 5s;
+ 
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .seperator {
@@ -566,7 +582,6 @@ body {
   header {
     height: 50vh;
     width: 100vw;
-    background-image: url(../images/8bit-header2.png);
     background-size: cover;
     margin: none;
     margin-left: 105px;
@@ -609,9 +624,13 @@ section {
 }
 
 .foot-link {
-    width: 85%;
-    height: 100px;
-    margin-left: 130px;
+  margin-top: 75px;
+  margin-bottom: 50px;
+    display:flex;
+    flex-direction: column;
+    
+    margin-left: 110px;
+    background-image: none;
 }
 
 
@@ -644,9 +663,12 @@ li.link-item:hover {
 
 
 .link {
-    font-size: medium;
+  display:flex;
+  justify-content: center;
+    font-size: small;
     margin-left: 0px;
     margin-top: 10px;
+    
     width: 85%;
 }
 
@@ -797,7 +819,7 @@ p {
 
 
   .floatbox {
-    
+    color: rgb(35, 132, 20);
     width: fit-content;
     position: absolute;
     padding: 5px;
@@ -808,6 +830,7 @@ p {
   }
   
   .floatbox2 {
+    color: rgb(35, 132, 20);
     width: fit-content;
     position: absolute;
     padding: 5px;
@@ -893,6 +916,5 @@ h4.nav-name {
   margin: 0;
   margin-top: 20px;
   font-weight: 600;
-  
 }
 }
