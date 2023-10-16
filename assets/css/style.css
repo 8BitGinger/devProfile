@@ -559,6 +559,10 @@ p {
 }
 
 @media screen and (max-width: 992px) {
+body {
+  width: 99%;
+}
+
   header {
     height: 50vh;
     width: 100vw;
