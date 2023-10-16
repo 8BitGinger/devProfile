@@ -6,7 +6,6 @@ This profile is used to display a visual representation of my current projects w
 ![screenshot](./assets/images/live-screenshot-profile.png?raw=true "Live Screenshot")
 
 ## Installation
-
 No installation required!
 
 ## Resources
@@ -21,9 +20,16 @@ Rajdhani
 ```
 Font Awesome - Icons
 
-PNG Tree
+PNG Tree - 8-Bit Assets
 
+## Links
+```
+Live URL: https://8bitginger.github.io/devProfile/
+Repo URL: https://github.com/8BitGinger/devProfile
+```
 
+## Roadmap
+We will be adding Javascript future projects and other items to keep this a working Portfolio
 
 ## License
 [PNG Tree](https:pngtree.com)

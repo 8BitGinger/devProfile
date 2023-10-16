@@ -370,7 +370,7 @@ p {
     position: absolute;
     margin-top:-100px;
     padding: 10px;
-    font-size: large;
+    font-size: larger;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     color:orange;
@@ -454,23 +454,345 @@ p {
   justify-content: center;
   margin-left: 200px;
   font-size: 50px;
-  background-color: rgba(0, 0, 0, 0.45);  
+  border-radius: ;
+  background-color: rgba(212, 201, 50, 0.45);  
   backdrop-filter: blur(5px);
   color: rgb(255, 255, 255);
   font-family: 'dela gothic one';
-  height: 80px;
+  height: 160px;
   font-weight: 100;
 
 }
 
 .para-title {
-  font-size: 100px;
+  font-size: 60px;
   color: orange;
   font-family: 'caveat';
   margin: 0;
   margin-top: 20px;
   font-weight: 600;
+  
+}
+
+.seperator {
+  border-top: 3px dashed #bbb;
 
 }
 
 
+@media screen and (max-width: 992px) {
+  header {
+    height: 50vh;
+    width: 100vw;
+    background-image: url(../images/8bit-header2.png);
+    background-size: cover;
+    margin: none;
+    margin-left: 100px;
+    margin-right: 0;
+}
+
+
+
+
+section {
+    width: 70%;
+    margin-top: 30px;
+
+}
+
+.side {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 100px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-image: url(../images/grass.jpeg);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding: 7px;
+}
+
+
+.main-title {
+  height: fit-content;
+    font-size: 40px;
+    padding: 10px;
+}
+
+.coder-title {
+
+    font-size: 20px;
+
+}
+
+.foot-link {
+    width: 85%;
+    height: 100px;
+    margin-left: 130px;
+}
+
+
+
+
+.start {
+  width: 80px;
+  margin: 10px;
+}
+
+.nav-pic {
+  width: 35px;
+
+}
+
+li.link-item:hover {
+  scale: 1.1;
+
+}
+
+
+h4.nav-name {
+  width: 100%;
+
+  font-size: large;
+
+}
+
+.link {
+    font-size: medium;
+    margin-left: 0px;
+    margin-top: 10px;
+    width: 75%;
+}
+
+.icon {
+  color: rgb(39, 215, 19);
+
+    font-size: 35px;
+    margin-left: 10px;
+}
+
+
+.link:hover {
+
+    scale: 1.1;
+    
+
+}
+
+
+
+.aboutMe {
+  margin: auto;
+  margin-left: 130px;
+  border: 2px solid rgba(11, 225, 11, .35);
+  width: 85%;
+  border-radius: 12px;
+
+  margin-top: 25px;
+ 
+ 
+  
+}
+
+
+
+p {
+  border-radius: 10px;
+  margin: 30px;
+  font-size: larger;
+  
+
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(68, 5vw);
+    grid-gap: 5px;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+
+    padding: 5px;
+    
+    margin-left: 140px;
+    box-shadow: -5px -5px 20px 5px orange, 5px 5px 20px 5px rgb(9, 240, 9);
+  }
+  
+  .gallery__item {
+    filter: none;
+  }
+
+  .gallery__item--1 {
+    margin-top: 20px;
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 12;
+  }
+  
+  .gallery__item--2 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 12;
+    grid-row-end: 24;
+  }
+  
+  .gallery__item--3 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 24;
+    grid-row-end: 36;
+  }
+  
+  .gallery__item--4 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 36;
+    grid-row-end: 48;
+  }
+  
+  .gallery__item--5 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 48;
+    grid-row-end: 60;
+  }
+  
+  .gallery__item--6 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 60;
+    grid-row-end: 72;
+  }
+  
+  .gallery__item--7 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 72;
+    grid-row-end: 86;
+  }
+
+  .gallery__item--8 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 86;
+    grid-row-end: 98;
+  }
+
+  .gallery__item--9 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 98;
+    grid-row-end: 110;
+  }
+
+  .gallery__item--10 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 110;
+    grid-row-end: 122;
+  }
+
+  .gallery__item--11 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 122;
+    grid-row-end: 134;
+  }
+
+
+
+  .floatbox {
+    color: rgb(51, 39, 227);
+    width: fit-content;
+    position: absolute;
+    padding: 5px;
+    font-size: large;
+    margin-top: -90px;
+    background-color: rgba(255, 255, 255, 0.45);  
+    backdrop-filter: blur(5px);
+  }
+  
+  .floatbox2 {
+    width: fit-content;
+    position: absolute;
+    padding: 5px;
+    font-size: large;
+    margin-top: -90px;
+    background-color: rgba(255, 255, 255, 0.45);  
+    backdrop-filter: blur(5px);
+    color: blue;
+  }
+
+  .float {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    margin-left: 5px;
+
+  }
+
+  .repo {
+    width: 100px;
+    opacity: 1;
+  }
+
+  .repo:hover {
+    scale: 1.1;
+    transition: ease-in-out 0.5s;
+    opacity: .80;
+  }
+
+  .title {
+    font-size: 30px;
+    margin-bottom: 0;
+   margin-left: 80px;
+   padding: 20px;
+   padding-left: 40px;
+    width: 250px;
+
+
+  }
+
+  .left {
+    text-indent: 10%;
+    text-align: left;
+  }
+
+  .dino {
+    height: 115px;
+  }
+
+  h2.time {
+    background-color: none;
+  }
+
+.time {
+align-items: center;
+border-radius: 50%;
+margin-top: 25px;
+font-size: 30px;
+margin-left: 200px;
+background-color: none;
+background-image: url(../images/clock.png);
+background-size: cover;
+width: 150px;
+height: 150px;
+padding: 10px;
+justify-content: center;
+}
+
+.para-title {
+  font-size: 50px;
+  color: orange;
+  font-family: 'caveat';
+  margin: 0;
+  margin-top: 20px;
+  font-weight: 600;
+  
+}
+}
