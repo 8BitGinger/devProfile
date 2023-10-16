@@ -591,6 +591,7 @@ section {
   background-image: url(../images/grass.jpeg);
   overflow-x: hidden; /* Disable horizontal scroll */
   padding: 7px;
+
 }
 
 
@@ -619,9 +620,7 @@ section {
 }
 
 .knight {
-  animation: none;
-  margin-left: 100px;
-  height: 100px;
+  display: none;
 }
 
 .start {
@@ -630,9 +629,10 @@ section {
 }
 
 .nav-pic {
-  width: 35px;
+  width: 55px;
 
 }
+
 
 li.link-item:hover {
   scale: 1.1;
@@ -640,12 +640,7 @@ li.link-item:hover {
 }
 
 
-h4.nav-name {
-  width: 100%;
 
-  font-size: large;
-
-}
 
 .link {
     font-size: medium;
@@ -689,8 +684,10 @@ h4.nav-name {
 p {
   border-radius: 10px;
   margin: 30px;
-  font-size: larger;
-  width: 90%;
+  font-size:x-large;
+  width: 100%;
+  padding: 3px;
+  margin: 0;
   
 
 }
@@ -824,7 +821,7 @@ p {
     left: 0;
     z-index: 2;
     margin-left: 5px;
-
+    width: 99%;
   }
 
   .repo {
@@ -875,6 +872,11 @@ width: 150px;
 height: 150px;
 padding: 10px;
 justify-content: center;
+}
+
+h4.nav-name {
+  color: black;
+  font-size: x-large;
 }
 
 .para-title {
