@@ -1,4 +1,4 @@
-const dateTime = dayjs().format('dddd <br> h:m a');
+const dateTime = dayjs().format('dddd <br> h:mm a');
 const timeEl = document.querySelector('#time');
 
 timeEl.innerHTML = dateTime ;

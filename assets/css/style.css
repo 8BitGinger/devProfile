@@ -214,7 +214,7 @@ p {
   border-radius: 10px;
   margin: 50px;
   font-size: x-large;
-  
+  font-weight: 500;
 
 }
 
@@ -261,7 +261,8 @@ p {
   box-shadow: ;
   scale: 1.03;
   transition: ease-in-out 0.1s;
-
+    font-size: large;
+    
 
   }
   
@@ -415,8 +416,10 @@ p {
   }
 
   .left {
-    text-indent: 10%;
+    
     text-align: left;
+    background-color: rgba(0, 0, 0, 0.80);  
+    padding: 15px;
   }
 
   .game-over {
@@ -479,6 +482,14 @@ p {
 
 }
 
+.code {
+  color: rgb(89, 255, 0);
+  font-size: x-large;
+
+  font-family: 'pixelify sans';
+ 
+  font-weight: 900;
+}
 
 @media screen and (max-width: 992px) {
   header {
