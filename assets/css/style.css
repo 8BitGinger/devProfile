@@ -603,7 +603,7 @@ section {
 
 .coder-title {
 
-    font-size: 20px;
+   display: none;
 
 }
 
@@ -703,7 +703,7 @@ p {
     margin: auto;
     margin-top: 50px;
 
-    padding: 5px;
+    padding: 0px;
     
     margin-left: 140px;
     box-shadow: -5px -5px 20px 5px orange, 5px 5px 20px 5px rgb(9, 240, 9);
@@ -711,6 +711,8 @@ p {
   
   .gallery__item {
     filter: none;
+    padding: 0;
+    margin: 5px;
   }
 
   .gallery__item--1 {
