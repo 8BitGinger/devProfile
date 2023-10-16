@@ -81,9 +81,9 @@ section {
     border-right: .15em solid rgb(0, 255, 26); /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
+    letter-spacing: .1em; /* Adjust as needed */
     animation: 
-      typing 3.5s steps(40, end),
+      typing 2.5s steps(40, end),
       blink-caret .75s step-end infinite;
   }
   
@@ -494,20 +494,17 @@ p {
 }
 
 .time {
-  display:flex;
-  text-align: center;
-  margin: auto;
-  justify-content: center;
-  margin-left: 200px;
-  font-size: 50px;
-  border-radius: ;
-  background-color: rgba(212, 201, 50, 0.45);  
-  backdrop-filter: blur(5px);
+  position:fixed;
+  top: 0;
+  right: 0;
+  font-size: 25px;
+  margin-right: 20px;
   color: rgb(255, 255, 255);
   font-family: 'dela gothic one';
   height: 160px;
   font-weight: 100;
-
+  z-index: 2;
+  text-align: center;
 }
 
 .para-title {
@@ -862,10 +859,14 @@ p {
   }
 
 .time {
+  display: flex;
+  position: static;
 align-items: center;
 border-radius: 50%;
+margin: auto;
 margin-top: 25px;
-font-size: 30px;
+font-size: 20px;
+align-items: center;
 margin-left: 200px;
 background-color: none;
 background-image: url(../images/clock.png);
