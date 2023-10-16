@@ -77,6 +77,26 @@ section {
     opacity: 0.75;
     text-align: center;
     padding: 20px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(0, 255, 26); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(47, 255, 0); }
 }
 
 .coder-title {
@@ -131,7 +151,7 @@ a {
 li.link-item:hover {
   scale: 1.2;
   transition: ease-in-out 0.5s;
-
+  
 }
 
 
@@ -184,6 +204,8 @@ h4.nav-name {
   transition: ease-in-out 0.5s;
 
     scale: 1.2;
+    
+
     
 
 }
@@ -258,7 +280,8 @@ p {
   
   .gallery__item:hover {
     filter: none;
-  box-shadow: ;
+    animation: shake 0.5s;
+
   scale: 1.03;
   transition: ease-in-out 0.1s;
     font-size: large;
@@ -395,6 +418,26 @@ p {
     scale: 1.2;
     transition: ease-in-out 0.5s;
     opacity: 1;
+    animation: shake 0.5s;
+
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+
+
+  }
+
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
 
   .title {
@@ -489,6 +532,33 @@ p {
   font-family: 'pixelify sans';
  
   font-weight: 900;
+}
+
+.dino {
+  margin-left: -100px;
+  left: 0;
+  transition: 0.5s;
+  animation: dinomove 4s infinite;   
+}
+
+@keyframes dinomove{
+  0% {
+    transform: translateX(100px) rotateY(0deg);
+  }
+  49% {
+    transform: translateX(300px) rotateY(0deg);
+  }
+  50% {
+    transform: translateX(300px) rotateY(360deg);
+  }
+  100% {
+    transform: translateX(100px) rotateY(360deg);
+  }
+}
+
+.knight {
+  margin-left: 300px;
+  animation: shake 6s infinite;
 }
 
 @media screen and (max-width: 992px) {
