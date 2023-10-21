@@ -243,7 +243,7 @@ p {
 .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(26, 5vw);
+    grid-template-rows: repeat(22, 5vw);
     grid-gap: 5px;
     width: 70%;
     justify-content: center;
@@ -710,7 +710,7 @@ p {
 .gallery {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(68, 5vw);
+    grid-template-rows: repeat(110, 5vw);
     grid-gap: 5px;
     width: 80%;
     justify-content: center;
@@ -794,19 +794,7 @@ p {
     grid-row-end: 110;
   }
 
-  .gallery__item--10 {
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 110;
-    grid-row-end: 122;
-  }
 
-  .gallery__item--11 {
-    grid-column-start: 1;
-    grid-column-end: 9;
-    grid-row-start: 122;
-    grid-row-end: 134;
-  }
 
 
 
